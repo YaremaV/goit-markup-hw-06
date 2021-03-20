@@ -320,6 +320,8 @@ form {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: var(--praimary-text-color);
 }
 
 .form-fields {
@@ -806,9 +808,10 @@ form .button {
 }
 
 /* =====FORM====== */
-.form-title {
+.footer-form-title {
   text-align: left;
   margin-left: 93px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
