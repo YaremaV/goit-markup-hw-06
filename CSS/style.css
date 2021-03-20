@@ -834,6 +834,10 @@ form .button {
   background-color: transparent;
 }
 
+.footer-form input[placeholder="E-mail"] {
+  padding-left: 15px;
+}
+
 .subscribe-down {
   display: flex;
   justify-content: center;
@@ -842,6 +846,7 @@ form .button {
 }
 
 .footer-button {
+  position: relative;
   display: inline-block;
   text-align: center;
   padding: 10px 29px;
@@ -868,7 +873,12 @@ form .button {
 }
 
 /* =====FORM-end====== */
-
+.footer-icon {
+  position: absolute;
+  background-color: tomato;
+  fill: var(--white-color);
+  margin-left: 10px;
+}
 /* Портфолио */
 
 .header-portfolio {
