@@ -325,6 +325,7 @@ form {
 }
 
 .form-fields {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -336,6 +337,13 @@ form {
   min-height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-fields input:hover,
+.form-fields input:focus {
+  border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -355,6 +363,11 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+textarea:hover,
+textarea:focus {
+  color: var(--accent-color);
 }
 
 .form-policy {
@@ -390,6 +403,11 @@ form .button {
   line-height: 1.87;
 
   letter-spacing: 0.06em;
+}
+
+.icon-form-modal {
+  position: absolute;
+  margin-bottom: 15px;
 }
 /* ======FORM-end======= */
 
@@ -837,8 +855,15 @@ form .button {
   background-color: transparent;
 }
 
-.footer-form input[placeholder="E-mail"] {
+.footer-form input::placeholder {
   padding-left: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-down {
@@ -849,9 +874,9 @@ form .button {
 }
 
 .footer-button {
-  position: relative;
   display: inline-block;
   text-align: center;
+  align-items: center;
   padding: 10px 29px;
   margin-left: 12px;
   border-radius: 4px;
@@ -877,7 +902,8 @@ form .button {
 
 /* =====FORM-end====== */
 .footer-icon {
-  position: absolute;
+  text-align: center;
+  align-items: center;
   background-color: tomato;
   fill: var(--white-color);
   margin-left: 10px;
