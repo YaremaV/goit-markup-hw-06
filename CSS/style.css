@@ -294,6 +294,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  outline: none;
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -340,11 +341,15 @@ form {
 
 .form-fields input {
   margin-top: 4px;
+  padding-left: 42px;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-fields input:hover,
@@ -370,6 +375,9 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea:hover,
@@ -414,7 +422,15 @@ form .button {
 
 .icon-form-modal {
   position: absolute;
-  margin-bottom: 15px;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:hover + .icon-form-modal,
+.form-input:focus + .icon-form-modal {
+  fill: var(--accent-color);
 }
 /* ======FORM-end======= */
 
@@ -853,18 +869,19 @@ form .button {
 }
 
 .footer-form input {
+  padding-left: 15px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
 
   background-color: transparent;
+  color: var(--white-color);
 }
 
 .footer-form input::placeholder {
-  padding-left: 15px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
