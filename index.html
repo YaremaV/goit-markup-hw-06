@@ -30,7 +30,7 @@
             <li class="item">
                 <a href="mailto:info@devstudio.com" class="info">
                 <svg class="icon" width="16" height="12">
-                    <use href="./Images/SVG-img/sprite.svg#icon-mail"></use>
+                    <use href="./Images/SVG-img/sprite.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
             </a>
@@ -61,44 +61,45 @@
 
                 <button data-modal-close type="button" class="button-close">
                     <svg class="icon-close" width="11" height="11">
-                        <use href="./Images/SVG-img/sprite.svg#icon-close"></use>
+                        <use href="./Images/SVG-img/sprite.svg#icon-close-modal"></use>
                     </svg>
                 </button>
 
-                <form >
-                    <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <form autocomplete="off">
+                    <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                     <div class="form-fields">
                         <label for="user-name">Имя</label>
-                        <input  class="form-input" type="text" name="user-name" id="user-name">
-                        <svg class="icon-form-modal" width="12" height="12">
-                            <use href="./Images/SVG-img/sprite.svg#icon-person"></use>
+                        <input  class="form-input" type="text" name="user-name" id="user-name" required minlength="2">
+                        <svg class="icon-form-modal" width="18" height="18">
+                            <use href="./Images/SVG-img/sprite.svg#icon-person-black"></use>
                         </svg>
                     </div>
 
                     <div class="form-fields">
                         <label for="tel">Телефон</label>
-                        <input class="form-input" type="tel" name="tel" id="tel">
-                        <svg class="icon-form-modal" width="13" height="13">
-                            <use href="./Images/SVG-img/tel-form.svg"></use>
+                        <input class="form-input" type="tel" name="user-telephone" id="tel" required>
+                        <svg class="icon-form-modal" width="18" height="18">
+                            <use href="./Images/SVG-img/sprite.svg#icon-telephone-form"></use>
                         </svg>
                     </div>
 
                     <div class="form-fields">
                         <label for="email">Почта</label>
-                        <input class="form-input" type="email" name="email" id="email">
-                        <svg class="icon-form-modal" width="15" height="12">
-                            <use href="./Images/SVG-img/mail-form.svg"></use>
+                        <input class="form-input" type="email" name="user-email" id="email">
+                        <svg class="icon-form-modal" width="18" height="18">
+                            <use href="./Images/SVG-img/sprite.svg#icon-mail-form"></use>
                         </svg>
                     </div>
                     
                     <div class="form-fields">
                         <label for="coment">Комментарий</label>
-                        <textarea name="user-coment" id="coment"  placeholder="Введите текст"></textarea>
+                        <textarea name="user-messages" id="coment"  placeholder="Введите текст"></textarea>
                     </div>
 
                     <div class="form-policy">
-                        <input type="checkbox" name="" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю</label> <a style="text-decoration: underline; color:  var(--accent-color); margin-left: 4px;">Условия договора</a>
+                        <input class="modal-form-term visually-hidden" type="checkbox" name="user-accept" id="user-term" value="">
+                        <label  class="modal-form-check-desc" for="user-term">Соглашаюсь с рассылкой и принимаю&nbsp;<a style="display: block; text-decoration: underline; color:  var(--accent-color);">Условия договора</a>
+                        </label> 
                     </div>
 
                     <button type="submit" class="button">Отправить</button>
@@ -454,7 +455,7 @@
                 <input type="text" name="subscribe" id="subscribe" placeholder="E-mail">
                 <button type="submit" class="footer-button">Подписаться
                     <svg class="footer-icon" width="24" height="24">
-                        <use href="./Images/SVG-img/sprite.svg#icon-tekegram"></use>
+                        <use href="./Images/SVG-img/sprite.svg#icon-telegram"></use>
                     </svg>
                 </button>
             </div>
